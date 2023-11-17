@@ -8,8 +8,8 @@ pygame.init()
 white = (255, 255, 255)
 black = (0, 0, 0)
 gray = (128,128,128)
-width = 500
-height = 600
+width = 400
+height = 650
 background = white
 player = pygame.transform.scale(pygame.image.load('nhanvat.png'), (70, 70))
 fps = 60
@@ -124,7 +124,7 @@ while running == True:
     jump = check_collisions(blocks, jump)
     player_x += x_change
 
-    if player_y < 550:
+    if player_y < 600:
         player_y = update_player(player_y)
     else:
         game_over = True
