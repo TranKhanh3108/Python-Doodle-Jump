@@ -79,15 +79,15 @@ while running == True:
     screen.blit(player, (player_x, player_y))
     blocks = []
     score_text = font.render('High score: ' + str(high_score), True, black, background)
-    screen.blit(score_text, (380, 10))
+    screen.blit(score_text, (280, 10))
     high_score_text = font.render('Score: ' + str(score), True, black, background)
-    screen.blit(high_score_text, (420, 30))
+    screen.blit(high_score_text, (320, 30))
 
     score_text = font.render('Air Jump (Spacebar) ' + str(super_jump), True, black, background)
     screen.blit(score_text, (20, 20))
     if game_over:
         game_over_text = font.render('Game over: Spacebar to restart! ', True, black, background)
-        screen.blit(game_over_text, (120, 80))
+        screen.blit(game_over_text, (80, 80))
 
 
     for i in range(len(platforms)):
